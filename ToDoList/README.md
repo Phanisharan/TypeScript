@@ -3,13 +3,13 @@
 
 # To run the project
 
-## First Step
+## First Step:
 
 ```
-  npm installl
+  npm install
 
 ```
-## Second Step
+## Second Step:
 
 ```
   npm run dev
