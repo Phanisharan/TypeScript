@@ -10,8 +10,6 @@ The user can enter a city name, and the app displays current weather conditions 
 
 > Type a city like `Hyderabad` and get current weather info!
 
-![screenshot](./screenshot.png) <!-- Optional: add a screenshot here -->
-
 ---
 
 ### 🛠️ Tech Stack
@@ -26,9 +24,6 @@ The user can enter a city name, and the app displays current weather conditions 
 ### 📦 Installation
 
 ```bash
-# Clone the repository
-git clone https://github.com/Phanisharan/weather-app.git
-
 # Navigate into the project directory
 cd weather-app
 
