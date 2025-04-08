@@ -1,0 +1,203 @@
+:root {
+  --primary-color: #00b894;
+  --primary-dark: #019875;
+  --danger-color: #d63031;
+  --bg-color: #f1f2f6;
+  --text-color: #2d3436;
+  --card-bg: #ffffff;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  --font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Reset & Base Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: var(--font-family);
+  line-height: 1.6;
+  padding: 1rem;
+}
+
+main {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: var(--card-bg);
+  border-radius: 1rem;
+  box-shadow: 0 6px 18px var(--shadow-color);
+}
+
+/* Offscreen Utility */
+.offscreen {
+  position: absolute;
+  left: -10000px;
+}
+
+/* Input Form */
+.newItemEntry__form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ecf0f1;
+  padding: 0.75rem;
+  border-radius: 0.75rem;
+  box-shadow: inset 0 1px 2px rgba(0,0,0,0.05);
+}
+
+.newItemEntry__input {
+  flex-grow: 1;
+  padding: 0.6em 1em;
+  border: none;
+  border-radius: 0.5em;
+  font-size: 1rem;
+  outline: none;
+  background-color: #fff;
+  margin-right: 0.75rem;
+  transition: box-shadow 0.3s ease;
+}
+
+.newItemEntry__input:focus {
+  box-shadow: 0 0 0 3px rgba(0, 184, 148, 0.25);
+}
+
+/* Add Button */
+.newItemEntry__button {
+  background-color: var(--primary-color);
+  color: #fff;
+  font-size: 1.5rem;
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.newItemEntry__button:hover,
+.newItemEntry__button:focus {
+  background-color: var(--primary-dark);
+  transform: rotate(90deg);
+}
+
+/* List Header */
+.listTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1.5rem 0 1rem;
+}
+
+.listTitle h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+/* Clear Button */
+.listTitle__button {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 0.6em 1.2em;
+  border: none;
+  border-radius: 0.5em;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.listTitle__button:hover,
+.listTitle__button:focus {
+  background-color: var(--primary-dark);
+  transform: scale(1.05);
+}
+
+/* Task List */
+#listItems {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  background-color: #fdfdfd;
+  border-radius: 0.5em;
+  padding: 1rem;
+  gap: 1rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+  transition: background-color 0.2s ease;
+}
+
+.item:hover {
+  background-color: #f0fff8;
+}
+
+/* Checkbox */
+.item > input[type="checkbox"] {
+  min-width: 1.8rem;
+  min-height: 1.8rem;
+  accent-color: var(--primary-color);
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+/* Label */
+.item > label {
+  flex-grow: 1;
+  font-size: 1.1rem;
+  word-break: break-word;
+  cursor: pointer;
+}
+
+.item > input[type="checkbox"]:checked + label {
+  text-decoration: line-through;
+  color: #888;
+  opacity: 0.7;
+}
+
+/* Delete Button */
+.item > button {
+  background-color: transparent;
+  border: none;
+  color: #ccc;
+  font-size: 1.2rem;
+  padding: 0.4em;
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.item > button:hover,
+.item > button:focus {
+  color: var(--danger-color);
+  transform: scale(1.2);
+}
+
+/* Responsive Enhancements */
+@media (min-width: 768px) {
+  section {
+    padding: 2rem 0;
+  }
+
+  .newItemEntry__form {
+    gap: 1rem;
+  }
+
+  .listTitle__button {
+    font-size: 1.05rem;
+    padding: 0.75em 1.5em;
+  }
+}
