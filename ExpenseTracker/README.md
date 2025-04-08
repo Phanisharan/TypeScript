@@ -40,7 +40,7 @@ This app lets you track income and expenses, calculate the balance, and display 
 expense-tracker/
 ├── index.html     # Main UI
 ├── style.css      # App styling
-├── script.ts      # TypeScript logic (you write/edit this)
-├── script.js      # Compiled JS (browser uses this)
+├── app.ts      # TypeScript logic (you write/edit this)
+├── app.js      # Compiled JS (browser uses this)
 └── README.md      # You're reading it!
 ```
