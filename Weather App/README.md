@@ -27,7 +27,7 @@ The user can enter a city name, and the app displays current weather conditions 
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/weather-app.git
+git clone https://github.com/Phanisharan/weather-app.git
 
 # Navigate into the project directory
 cd weather-app
