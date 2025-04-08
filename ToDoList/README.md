@@ -1,10 +1,16 @@
-### To DO List
+# To DO List
 
-## To run the project
+# To run the project
 
-# First run 
+## First Step
 
 ```
   npm installl
 
 ```
+## Second Step
+
+```
+  npm run dev
+```
+
