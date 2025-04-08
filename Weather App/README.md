@@ -25,7 +25,7 @@ The user can enter a city name, and the app displays current weather conditions 
 
 ```bash
 # Navigate into the project directory
-cd weather-app
+cd Weather App
 
 # Install dependencies
 npm install
