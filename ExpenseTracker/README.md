@@ -18,7 +18,7 @@ This app lets you track income and expenses, calculate the balance, and display 
 1. **Compile TypeScript to JavaScript**  
    If you're editing `script.ts`, compile it to JS using:
    ```bash
-   tsc script.ts
+   tsc app.ts
    ```
 
 2. **Open `index.html` in your browser**  
